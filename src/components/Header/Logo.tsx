@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Logo() {
   return (
-    <Link href={"/"}>
-      <div className="">
+    <Link className="flex items-center gap-3" href={"/"}>
+      <div >
         <Image
           className="rounded-full"
           src={"/avatar.webp"}
@@ -11,8 +11,8 @@ export default function Logo() {
           height={50}
           alt="logo on avatar"
         />
-        <span className="font-bold">Mr.Bot</span>
       </div>
+        <h3 className="font-bold">Mr.Phony</h3>
     </Link>
   );
 }
