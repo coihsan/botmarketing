@@ -5,8 +5,8 @@ export default function SocialIcons() {
   return (
     <div className="flex items-center gap-3">
       {socialiconslink.map((iconslink) =>(
-        <Link className="text-[30px] bg-rose-600" key={socialiconslink.key} href={iconslink.url}>
-          <span className="">{iconslink.icons}</span>
+        <Link key={iconslink.key} className="hover:scale-[1.9]" key={socialiconslink.key} href={iconslink.url}>
+          {iconslink.icons}
         </Link>
       ))}
     </div>

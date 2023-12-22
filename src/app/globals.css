@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: white;
-  color: black;
+@layer utilities {
+  .flexItemsCenter {
+    @apply flex items-center gap-3;
+  }
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
 }
