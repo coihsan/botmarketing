@@ -19,7 +19,7 @@ export default function RootLayout({
       <body
         className={
           inter.className +
-          "bg-zinc-950 dark:bg-zinc-950 text-zinc-800 dark:text-white"
+          "bg-zinc-50 dark:bg-zinc-950 text-zinc-800 dark:text-white"
         }
       >
         <main>
