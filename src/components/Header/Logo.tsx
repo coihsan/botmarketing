@@ -12,7 +12,7 @@ export default function Logo() {
           alt="logo on avatar"
         />
       </div>
-        <h3 className="font-bold">Mr.Phony</h3>
+        <h3 className="font-bold text-3xl">Mr.Phony</h3>
     </Link>
   );
 }
