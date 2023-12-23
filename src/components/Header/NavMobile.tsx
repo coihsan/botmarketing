@@ -20,8 +20,8 @@ export default function NavMobile() {
   const [isMobile, setIsMobile] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav>
-      <div className="lg:hidden md:flex md:flex-col items-center gap-1">
+    <nav className="w-full absolute left-0">
+      <div className="lg:hidden max-[600px]:flex max-[600px]:flex-col items-center gap-1 ">
         {NAVBAR.map((link) => (
           <Link
             key={link.key}
