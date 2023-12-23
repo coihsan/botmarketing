@@ -10,3 +10,22 @@
     @apply flex items-center justify-center;
   }
 }
+/* kostum */
+#toggle-darkmode {
+  width: 30px;
+  height: 30px;
+  z-index: 2;
+  cursor: pointer;
+}
+#toggle-darkmode:checked ~ .dark-icon > .sun {
+  display: block;
+}
+#toggle-darkmode:checked ~ .dark-icon > .moon {
+  display: none;
+}
+.dark-icon .moon {
+  display: block;
+}
+.dark-icon .sun {
+  display: none;
+}

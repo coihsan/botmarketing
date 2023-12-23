@@ -1,15 +1,19 @@
 import Logo from "@/src/components/Header/Logo";
 import Navbar from "@/src/components/Header/Nav";
 import SocialIcons from "@/src/UI/SocialIcons";
+import DarkMode from "@/src/UI/DarkMode";
 export default function Header() {
   return (
-    <header className="fixed top-0 w-full shadow-md z-50 bg-white">
+    <header className="fixed top-0 w-full shadow-md z-50 bg-slate-50 dark:bg-slate-900">
       <div className="px-3 py-5 flex items-center justify-between max-w-screen-xl mx-auto  ">
-        <div className="flex items-center justify-between gap-5">
+        <div className="flex items-center gap-5">
           <Logo />
           <Navbar />
         </div>
-        <SocialIcons />
+        <div classList="flex items-center gap-5">
+          <SocialIcons />
+          <DarkMode />
+        </div>
       </div>
     </header>
   );
