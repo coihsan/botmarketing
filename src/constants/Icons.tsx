@@ -7,7 +7,7 @@ export const socialicons: {
   key: 0,
   twitter: (
     <svg
-      classList="fill-white"
+      className="dark:fill-slate-50"
       xmlns="http://www.w3.org/2000/svg"
       height="22"
       width="20"
@@ -18,6 +18,7 @@ export const socialicons: {
   ),
   instagram: (
     <svg
+      className="dark:fill-slate-50"
       xmlns="http://www.w3.org/2000/svg"
       height="22"
       width="20"
@@ -28,6 +29,7 @@ export const socialicons: {
   ),
   facebook: (
     <svg
+      className="dark:fill-slate-50"
       xmlns="http://www.w3.org/2000/svg"
       height="22"
       width="20"
@@ -38,6 +40,7 @@ export const socialicons: {
   ),
   linkedin: (
     <svg
+      className="dark:fill-slate-50"
       xmlns="http://www.w3.org/2000/svg"
       height="22"
       width="20"
