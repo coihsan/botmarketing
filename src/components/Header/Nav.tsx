@@ -4,7 +4,7 @@ import Link from "next/link";
 import { NAVBAR } from "@/src/constants/data";
 export default function Navbar() {
   return (
-    <nav className="w-full flex items-center gap-5 justify-between max-[600px]:hidden">
+    <nav className="w-full flex items-center gap-5 max-[600px]:hidden">
       <div className="max-[600px]:hidden flex items-center gap-1 ">
         {NAVBAR.map((link) => (
           <Link

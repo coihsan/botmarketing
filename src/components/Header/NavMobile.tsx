@@ -4,30 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { NAVBAR } from "@/src/constants/data";
 
-export function Hamburger({ onToggle }: { onToggle: () => void }) {
-  const [isClick, setIsClick] = useState(false);
-
-  function handleClick() {
-    if (!isClick) {
-      return "/menu.svg";
-    } else {
-      return "/close.svg";
-    }
-  }
-
-  return (
-    <div className="lg:hidden max-[600px]:flex">
-      <button
-        className="cursor-pointer flex items-center gap-2"
-        onClick={onToggle}
-      >
-        <span>Menu</span>
-        <Image src={handleClick()} width={30} height={30} alt="menu" />
-      </button>
-    </div>
-  );
-}
-
 export default function NavMobile() {
   const [isMobile, setIsMobile] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +20,6 @@ export default function NavMobile() {
           </Link>
         ))}
       </div>
-      <Hamburger />
     </nav>
   );
 }
