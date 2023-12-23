@@ -4,24 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { NAVBAR } from "@/src/constants/data";
 
-export function Hamburger({ onToggle, children }: { onToggle: () => void }) {
-  return (
-    <div className="lg:hidden max-[600px]:flex">
-      <button
-        className="cursor-pointer flex items-center gap-2"
-        onClick={onToggle}
-      >
-        {children}
-      </button>
-    </div>
-  );
-}
 export default function NavMobile() {
   const [isMobile, setIsMobile] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="w-full absolute left-0">
-      <div className="lg:hidden max-[600px]:flex max-[600px]:flex-col items-center gap-1 ">
+    <nav className="w-full absolute left-0 top-[90px] bg-onyx-900 p-5 lg:hidden max-[600px]:block">
+      <div className="lg:hidden max-[600px]:flex flex-col items-start gap-5 ">
         {NAVBAR.map((link) => (
           <Link
             key={link.key}
@@ -32,7 +20,6 @@ export default function NavMobile() {
           </Link>
         ))}
       </div>
-      <Hamburger />
     </nav>
   );
 }

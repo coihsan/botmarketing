@@ -1,8 +1,34 @@
+"use client";
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import Logo from "@/src/components/Header/Logo";
 import Navbar from "@/src/components/Header/Nav";
 import NavMobile from "@/src/components/Header/NavMobile";
 import SocialIcons from "@/src/UI/SocialIcons";
 import DarkMode from "@/src/UI/DarkMode";
+
+export function Hamburger({ onToggle }: { onToggle: () => void }) {
+  const [isClick, setIsClick] = useState(true);
+
+  function handleClick() {
+    if (!setIsClick) {
+      return "/menu.svg";
+    } else {
+      ("/close.svg");
+    }
+  }
+
+  return (
+    <div className="lg:hidden max-[600px]:block">
+      <button
+        className="cursor-pointer flex items-center gap-2"
+        onClick={onToggle}
+      >
+        <Image src={handleClick} width={30} height={30} alt="menu" />
+      </button>
+    </div>
+  );
+}
 export default function Header() {
   return (
     <header className="fixed top-0 w-full shadow-md z-50 bg-onyx-50 dark:bg-onyx-900">
@@ -16,6 +42,7 @@ export default function Header() {
           <DarkMode />
           <NavMobile />
         </div>
+        <Hamburger />
       </div>
     </header>
   );
