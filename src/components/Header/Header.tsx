@@ -10,7 +10,7 @@ export default function Header() {
           <Logo />
           <Navbar />
         </div>
-        <div classList="flex items-center gap-5">
+        <div className="flex items-center gap-5">
           <SocialIcons />
           <DarkMode />
         </div>
