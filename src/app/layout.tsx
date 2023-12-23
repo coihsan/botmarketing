@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={
-          "${inter.variable} bg-onyx-50 dark:bg-onyx-950 dark:text-slate-50"
+          "${inter.variable} bg-onyx-50 dark:bg-onyx-950 dark:text-onyx-50"
         }
       >
         <main>

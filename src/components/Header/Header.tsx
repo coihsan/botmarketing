@@ -5,7 +5,7 @@ import SocialIcons from "@/src/UI/SocialIcons";
 import DarkMode from "@/src/UI/DarkMode";
 export default function Header() {
   return (
-    <header className="fixed top-0 w-full shadow-md z-50 bg-slate-50 dark:bg-slate-900">
+    <header className="fixed top-0 w-full shadow-md z-50 bg-onyx-50 dark:bg-onyx-900">
       <div className="relative px-3 py-5 flex items-center justify-between max-w-screen-xl mx-auto  ">
         <div className="flex items-center gap-5">
           <Logo />

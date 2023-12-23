@@ -25,7 +25,7 @@ export default function NavMobile() {
         {NAVBAR.map((link) => (
           <Link
             key={link.key}
-            className="font-semibold py-1 px-4 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors ease-linear duration-300"
+            className="font-semibold py-1 px-4 rounded-full hover:bg-onyx-200 dark:hover:bg-onyx-700 transition-colors ease-linear duration-300"
             href={link.href}
           >
             {link.title}
