@@ -2,8 +2,8 @@ import Link from "next/link";
 import { NAVBAR } from "@/src/constants/data";
 export default function Navbar() {
   return (
-    <nav>
-      <div className="flex items-center gap-1">
+    <nav className="max-[600px]:hidden">
+      <div className="flex items-center gap-1 max-[600px]:hidden">
         {NAVBAR.map((link) => (
           <Link
             key={link.key}

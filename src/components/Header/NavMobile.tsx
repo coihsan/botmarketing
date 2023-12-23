@@ -1,9 +1,27 @@
+"use client";
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { NAVBAR } from "@/src/constants/data";
-export default function Navbar() {
+
+export function Hamburger({ onToggle, children }: { onToggle: () => void }) {
+  return (
+    <div className="lg:hidden max-[600px]:flex">
+      <button
+        className="cursor-pointer flex items-center gap-2"
+        onClick={onToggle}
+      >
+        {children}
+      </button>
+    </div>
+  );
+}
+export default function NavMobile() {
+  const [isMobile, setIsMobile] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <nav>
-      <div className="flex items-center gap-1">
+      <div className="lg:hidden md:flex md:flex-col items-center gap-1">
         {NAVBAR.map((link) => (
           <Link
             key={link.key}
@@ -14,6 +32,7 @@ export default function Navbar() {
           </Link>
         ))}
       </div>
+      <Hamburger />
     </nav>
   );
 }

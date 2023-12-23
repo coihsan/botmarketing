@@ -1,5 +1,6 @@
 import Logo from "@/src/components/Header/Logo";
 import Navbar from "@/src/components/Header/Nav";
+import NavMobile from "@/src/components/Header/NavMobile";
 import SocialIcons from "@/src/UI/SocialIcons";
 import DarkMode from "@/src/UI/DarkMode";
 export default function Header() {
@@ -13,6 +14,7 @@ export default function Header() {
         <div className="flex items-center gap-5">
           <SocialIcons />
           <DarkMode />
+          <NavMobile />
         </div>
       </div>
     </header>
