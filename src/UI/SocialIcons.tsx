@@ -8,7 +8,6 @@ export default function SocialIcons() {
         <Link
           key={iconslink.key}
           className="hover:scale-[0.9] "
-          key={socialiconslink.key}
           href={iconslink.url}
         >
           {iconslink.icons}
