@@ -1,7 +1,7 @@
-import SocialIcons from "@/src/UI/SocialIcons";
 import DarkMode from "@/src/UI/DarkMode";
 import Link from "next/link";
 import { NAVBAR } from "@/src/constants/data";
+import SearchIndex from "@/src/UI/SearchIndex";
 export default function Navbar() {
   return (
     <nav className="w-full flex items-center gap-5 max-[600px]:hidden">
@@ -17,7 +17,7 @@ export default function Navbar() {
         ))}
       </div>
       <div className="flex items-center gap-5">
-        <SocialIcons />
+        <SearchIndex />
         <DarkMode />
       </div>
     </nav>

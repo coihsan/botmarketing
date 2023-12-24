@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Logo() {
   return (
     <Link className="flex items-center overflow-hidden gap-3 " href={"/"}>
-      <div className="w-full rounded-full border-2 border-yellow-500">
+      <div className="w-full rounded-full border-4 border-yellow-500">
         <Image
           className="rounded-full"
           src={"/avatar.webp"}
