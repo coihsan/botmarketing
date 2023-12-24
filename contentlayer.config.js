@@ -31,8 +31,8 @@ const Blog = defineDocumentType(() => ({
       type: "boolean",
       default: true,
     },
-    author: { type: string, required: true },
-    tags: { type: string, required: true },
+    author: { type: "string", required: true },
+    tags: { type: "string", required: true },
   },
   computedFields: {
     url: {
