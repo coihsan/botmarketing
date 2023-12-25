@@ -5,7 +5,7 @@ export default function Logo() {
     <Link className="flex items-center overflow-hidden gap-3 " href={"/"}>
       <div className="w-full rounded-full border-4 border-yellow-500">
         <Image
-          className="rounded-full"
+          className="rounded-full max-[600px]:w-[32px] max-[600px]:h-[32px]"
           src={"/avatar.webp"}
           width={50}
           height={50}

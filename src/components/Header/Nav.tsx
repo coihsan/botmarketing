@@ -1,11 +1,11 @@
 import DarkMode from "@/src/UI/DarkMode";
+import SearchIndex from "@/src/UI/SearchIndex";
 import Link from "next/link";
 import { NAVBAR } from "@/src/constants/data";
-import SearchIndex from "@/src/UI/SearchIndex";
 export default function Navbar() {
   return (
-    <nav className="w-full flex items-center gap-5 max-[600px]:hidden">
-      <div className="max-[600px]:hidden flex items-center gap-1 ">
+    <nav className="w-full xl:flex max-md:flex md:flex items-center gap-5 max-sm:hidden">
+      <div className="max-lg:hidden xl:flex items-center gap-1">
         {NAVBAR.map((link) => (
           <Link
             key={link.key}

@@ -20,7 +20,7 @@ const ToggleDarkMode = () => {
   }, []);
 
   return (
-    <div className="flex relative p-1 rounded-[10px] border border-onyx-300 dark:border-onyx-700 bg-onyx-100 dark:bg-onyx-900 items-center justify-center">
+    <div className="flex relative p-1 rounded-[10px] border border-zinc-400 dark:border-onyx-700 bg-zinc-100 dark:bg-onyx-900 items-center justify-center">
       <input
         className="opacity-0"
         id="toggle-darkmode"
